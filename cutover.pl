@@ -41,6 +41,7 @@ while (<FH>) {
 	print "$int is on $vlan. Writing interface configuration to file.\n";
 	
 	# Write interface config to file.
+	# PLEASE ENSURE TO UPDATE THIS WITH YOUR OWN PORT CONFIG TEMPLATE
 		print OUTPUT "interface $int
  switchport mode access
  authentication event fail action next-method
