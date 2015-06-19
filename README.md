@@ -9,4 +9,4 @@ Many ask why I didn't just use CLI-scraping and connect to the switch to pull th
 
 Note: please update the switch port configuration template in the script to reflect it to your own.
 
--R
+-W
