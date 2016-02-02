@@ -47,7 +47,7 @@ while (<FH>) {
  authentication event fail action next-method
  authentication event server dead action reinitialize vlan $vlan
  authentication event server alive action reinitialize
- authentication host-mode multi-auth
+ authentication host-mode multi-domain
  authentication order dot1x mab
  authentication priority dot1x mab
  authentication port-control auto
