@@ -45,6 +45,7 @@ while (<FH>) {
 		print OUTPUT "interface $int
  switchport mode access
  authentication event fail action next-method
+ authentication event server dead action authorize voice
  authentication event server dead action reinitialize vlan $vlan
  authentication event server alive action reinitialize
  authentication host-mode multi-domain
@@ -58,7 +59,9 @@ while (<FH>) {
  authentication open
  mab
  dot1x pae authenticator
- dot1x timeout tx-period 10\n!\n";
+ dot1x timeout tx-period 7
+ dot1x max-req 1
+ dot1x max-reauth-req 1\n!\n";
  
 }
 
